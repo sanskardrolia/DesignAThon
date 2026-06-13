@@ -2085,6 +2085,137 @@ footer {
   border-bottom: 1px solid rgba(11, 34, 22, 0.08);
 }
 
+/* Map / Schedule a Visit */
+.map-visit {
+  padding: 8rem 0;
+  background-color: var(--color-ivory);
+  border-bottom: 1px solid rgba(11, 34, 22, 0.08);
+}
+
+.map-visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.map-visit-text .section-subtitle,
+.map-visit-text .section-title,
+.map-visit-text .section-desc {
+  text-align: left;
+}
+
+.map-visit-text .section-desc {
+  margin: 0 0 2.25rem 0;
+  max-width: 460px;
+}
+
+.map-frame {
+  position: relative;
+  border: 1px solid rgba(28, 27, 24, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.map-embed {
+  display: block;
+  width: 100%;
+  height: 460px;
+  border: 0;
+  filter: grayscale(100%) contrast(1.05);
+}
+
+.btn-schedule {
+  display: inline-block;
+  background: #000000;
+  color: #ffffff;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-schedule:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .map-visit-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* Footer newsletter */
+.footer-newsletter-text {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.newsletter-input {
+  flex: 1 1 140px;
+  min-width: 0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 2px;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-btn {
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+
+.newsletter-btn:hover {
+  opacity: 0.85;
+}
+
+.newsletter-msg {
+  flex-basis: 100%;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  min-height: 0.9rem;
+}
+
 .ledger-feed-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

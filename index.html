@@ -173,47 +173,26 @@
   <!-- ==========================================
        THE LITERARY LEDGER — SOCIAL PRESENCE
        ========================================== -->
-  <section class="ledger-social" id="social">
+  <section class="map-visit" id="social">
     <div class="container">
-      <div class="section-intro">
-        <span class="section-subtitle">THE LEDGER FEED</span>
-        <h2 class="section-title">Stories from the Shop</h2>
-        <p class="section-desc">Our social feed is styled like a printed literary journal column. A peek inside reader
-          spotlights, shelf discoveries, and cozy moments between the shelves.</p>
-      </div>
-
-      <div class="ledger-feed-grid">
-        <!-- Feed Card 1 -->
-        <div class="ledger-card">
-          <span class="ledger-date">SPOTLIGHT / ISSUE 14</span>
-          <div class="ledger-body">
-            <h4 class="ledger-title">"Books are the quietest and most constant of friends."</h4>
-            <p class="ledger-text">A snippet of conversation from our corner table, as two generation of readers discuss
-              local translations of Gitanjali over warm tea cups.</p>
-          </div>
-          <div class="ledger-footer">❧ Reading Moments</div>
+      <div class="map-visit-grid">
+        <!-- Left: text + CTA -->
+        <div class="map-visit-text">
+          <span class="section-subtitle">FIND US</span>
+          <h2 class="section-title">Where to Find Us</h2>
+          <p class="section-desc">Tucked into the heart of Florence, our doors open onto centuries of stories. Come
+            wander the shelves in person, share a cup of tea, and stay for the quiet.</p>
+          <a class="btn-schedule"
+            href="https://www.google.com/maps/dir/?api=1&destination=Firenze,Toscana,Italy"
+            target="_blank" rel="noopener">Schedule a Visit</a>
         </div>
 
-        <!-- Feed Card 2 -->
-        <div class="ledger-card">
-          <span class="ledger-date">DISCOVERY / VOL. II</span>
-          <div class="ledger-body">
-            <h4 class="ledger-title">Finding Arundhati Roy's Spines</h4>
-            <p class="ledger-text">Today we cataloged a rare 1997 hardback copy of "The God of Small Things" printed on
-              heavy textured cardstock. A tactile treasure.</p>
-          </div>
-          <div class="ledger-footer">❧ Curated Shelf Discovery</div>
-        </div>
-
-        <!-- Feed Card 3 -->
-        <div class="ledger-card">
-          <span class="ledger-date">STAFF NOTES / VOL. IX</span>
-          <div class="ledger-body">
-            <h4 class="ledger-title">A Sanctuary Screen-Free</h4>
-            <p class="ledger-text">"The reading chair under the brass lamp has been occupied for four hours. No screens,
-              just ink and tea." — Notes from the Archivist.</p>
-          </div>
-          <div class="ledger-footer">❧ Cozy Sanctuary Nook</div>
+        <!-- Right: monochrome map -->
+        <div class="map-frame">
+          <iframe class="map-embed"
+            src="https://www.google.com/maps?q=Firenze,Toscana,Italy&output=embed"
+            title="The Last Book Store — Florence, Italy" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -253,15 +232,15 @@
           </ul>
         </div>
 
-        <!-- Correspond -->
+        <!-- Newsletter -->
         <div class="footer-col">
-          <h5 class="footer-heading">Correspond</h5>
-          <ul class="footer-links">
-            <li><a href="mailto:hello@thelastbookstore.in">hello@thelastbookstore.in</a></li>
-            <li><a href="#social">The Ledger Feed</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Newsletter</a></li>
-          </ul>
+          <h5 class="footer-heading">Newsletter</h5>
+          <p class="footer-newsletter-text">Dispatches from the archive — new arrivals, rare finds, and reading evenings.</p>
+          <form class="footer-newsletter" onsubmit="this.querySelector('.newsletter-msg').textContent='Thank you — check your inbox.'; this.reset(); return false;">
+            <input type="email" class="newsletter-input" placeholder="Your email" required>
+            <button type="submit" class="newsletter-btn">Sign Up</button>
+            <span class="newsletter-msg"></span>
+          </form>
         </div>
       </div>
 
