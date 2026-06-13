@@ -168,9 +168,6 @@
        ========================================== -->
   <section class="membership-section" id="membership">
     <img src="assets/membership.png" alt="The Last Book Store Membership Cards" class="membership-card-img">
-    <div class="membership-cta-wrapper">
-      <button class="btn-member" onclick="document.getElementById('social').scrollIntoView({behavior: 'smooth'})">Be a Member</button>
-    </div>
   </section>
 
   <!-- ==========================================
@@ -232,6 +229,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Persistent membership CTA -->
+  <button class="btn-member-fixed" onclick="document.getElementById('membership').scrollIntoView({behavior: 'smooth'})">Be a Member</button>
 
   <!-- Book open background overlay shadow -->
   <div class="book-overlay" id="book-overlay"></div>
