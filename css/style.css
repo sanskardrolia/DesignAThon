@@ -124,10 +124,9 @@ header {
 }
 
 .brand-logo {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
-  filter: drop-shadow(1px 1px 2px rgba(11, 34, 22, 0.15));
 }
 
 .brand-text {
@@ -1874,39 +1873,9 @@ footer {
    ========================================================================== */
 .memory-wall {
   padding: 8rem 0;
-  background-color: #33271d; /* rich cork wood color */
+  background-color: var(--color-ivory);
   position: relative;
-  background-image: 
-    radial-gradient(rgba(0,0,0,0.4) 1px, transparent 1px),
-    var(--noise-overlay-heavy);
-  background-size: 8px 8px, 100% 100%;
-  border-bottom: 6px solid #201812;
-  box-shadow: 
-    inset 0 10px 30px rgba(0,0,0,0.6),
-    0 10px 25px rgba(0,0,0,0.25);
-}
-
-.memory-wall .section-title {
-  color: var(--color-ivory);
-}
-
-.memory-wall .section-subtitle {
-  color: var(--color-ivory-dark);
-}
-
-.memory-wall .section-desc {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-/* Wood Frame Border */
-.memory-wall::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  border: 15px solid #281d15;
-  pointer-events: none;
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
-  z-index: 10;
+  border-bottom: 1px solid rgba(11, 34, 22, 0.08);
 }
 
 .corkboard-container {
@@ -2236,68 +2205,49 @@ footer {
    THE COVENANT MEMBERSHIP
    ========================================================================== */
 .membership-section {
-  padding: 8rem 0;
-  background-color: var(--color-linen);
-  border-bottom: 2px solid rgba(11, 34, 22, 0.08);
-  background-image: var(--noise-overlay);
   position: relative;
-}
-
-.membership-container {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-
-.membership-text-content {
-  flex: 1;
-}
-
-.membership-text-content .section-title {
-  font-size: 2.8rem;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-  color: var(--color-forest);
-}
-
-.membership-text-content .section-desc {
-  font-size: 1.15rem;
-  color: rgba(28, 27, 24, 0.85);
-  margin-bottom: 2rem;
-  line-height: 1.7;
-}
-
-.membership-image-content {
-  flex: 1.2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+  background-color: var(--color-linen);
 }
 
 .membership-card-img {
-  width: 100%;
-  max-width: 580px;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
   height: auto;
-  border-radius: 8px;
-  box-shadow: 
-    0 15px 35px rgba(0, 0, 0, 0.4),
-    0 5px 15px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(28, 27, 24, 0.15);
   display: block;
+  filter: none;
 }
 
-@media (max-width: 768px) {
-  .membership-container {
-    flex-direction: column;
-    gap: 3rem;
-    text-align: center;
-  }
-  
-  .membership-text-content .section-title {
-    font-size: 2.2rem;
-  }
-  
-  .membership-image-content {
-    width: 100%;
-  }
+.membership-card-img:hover {
+  filter: none;
+}
+
+.membership-cta-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.btn-member {
+  background: #000000;
+  color: #f3ead7;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.btn-member:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
 }
