@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Book Store — The Modern Archive</title>
+  <meta name="description"
+    content="Blending a 40-year legacy with modern editorial prestige. Enter the slow-web tactile archives of the world's most exclusive rare book store.">
+  <meta name="keywords"
+    content="the last book store, slow web, skeuomorphic web, rare book archive, print prestige, 1989">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <div class="brand">
+        <img src="assets/logo.png" alt="The Last Book Store Logo" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-text">
+          <span class="brand-subtitle">Est. 1989 — College Street, Kolkata</span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" id="nav-link-about">The Heritage</a></li>
+          <li><a href="#gallery" id="nav-link-gallery">The Space</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION — THE OPEN JOURNAL FOLIO
+       ========================================== -->
+  <section class="hero" id="about">
+    <video autoplay loop muted playsinline class="hero-video-bg">
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay-shroud"></div>
+
+    <!-- Centered Editorial Content -->
+    <div class="hero-content-wrapper">
+      <h1 class="hero-title">
+        The Last Book Store.<br>Find stories that <span class="highlight-marker">change everything.</span>
+      </h1>
+    </div>
+
+    <!-- Hanging bookmark ribbon scroll indicator -->
+    <div class="scroll-ribbon-container visible" id="scroll-ribbon"
+      onclick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'})">
+      <div class="scroll-ribbon-metal"></div>
+      <div class="scroll-ribbon-fabric">SCROLL DOWN</div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- ==========================================
+       EXPERIENCE THE SPACE — CINEMATIC GALLERY
+       ========================================== -->
+  <section class="experience-space" id="gallery">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-subtitle">VISIT THE SHOP</span>
+        <h2 class="section-title">Experience the Physical Space</h2>
+        <p class="section-desc">Take a visual tour through our sanctuary. Every nook, table, and shelf carries decades
+          of history and community spirit.</p>
+      </div>
+
+      <div class="space-gallery-grid">
+        <!-- Item 1: Large landscape -->
+        <div class="gallery-item item-large">
+          <img src="assets/cozy_corner.png" alt="Cozy Reading Corner" class="gallery-img">
+          <div class="gallery-info">
+            <span class="gallery-tag">COZY CORNERS</span>
+            <h4 class="gallery-title">Sanctuaries for Reflection</h4>
+            <p class="gallery-desc">Comfortable leather wingback chairs and soft floor lamp light designed for slowing
+              down.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Vertical column -->
+        <div class="gallery-item">
+          <img src="assets/community_table.png" alt="Community Tables" class="gallery-img">
+          <div class="gallery-info">
+            <span class="gallery-tag">COMMUNITY TABLES</span>
+            <h4 class="gallery-title">Where Conversations Begin</h4>
+            <p class="gallery-desc">Stacked journals and steaming cups of tea where readers gather daily.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Detail view -->
+        <div class="gallery-item">
+          <img src="assets/hidden_discoveries.png" alt="Hidden Discoveries" class="gallery-img">
+          <div class="gallery-info">
+            <span class="gallery-tag">HIDDEN DISCOVERIES</span>
+            <h4 class="gallery-title">Secrets of the Shelf</h4>
+            <p class="gallery-desc">Sunlight streams over rare, hand-opened volumes waiting to be rediscovered.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ==========================================
+       MEMORY WALL — NOSTALGIC COMMUNITY BOARD
+       ========================================== -->
+  <section class="memory-wall" id="memories">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-subtitle">COMMUNITY LOGS</span>
+        <h2 class="section-title">The Memory Bulletin Board</h2>
+        <p class="section-desc">Preserving the moments of human connection and quiet breakthroughs that have unfolded
+          between our shelves since 1989.</p>
+      </div>
+
+      <div class="corkboard-container">
+        <!-- Pinned Note 1: Rajesh -->
+        <div class="pinned-note note-color-1 note-rotate-left">
+          <div class="brass-pushpin"></div>
+          <p class="note-quote">"Bought my first vintage novel here in 1987. A dust-jacketed copy of Tagore that I still
+            read every monsoon."</p>
+          <span class="note-author">— Rajesh (Reader since 1989)</span>
+        </div>
+
+        <!-- Pinned Note 2: Anita -->
+        <div class="pinned-note note-color-2 note-rotate-right">
+          <div class="brass-pushpin"></div>
+          <p class="note-quote">"Every year, I come back to the corner philosophy shelf. It is the only place in Kolkata
+            where my mind finds complete quiet."</p>
+          <span class="note-author">— Anita (Reader since 1994)</span>
+        </div>
+
+        <!-- Pinned Note 3: Fictional memory -->
+        <div class="pinned-note note-color-3 note-rotate-left-slight">
+          <div class="brass-pushpin"></div>
+          <p class="note-quote">"Met my lifelong reading group at the heavy mahogany study table on a rainy afternoon in
+            2002. We still meet every Saturday."</p>
+          <span class="note-author">— Kabir (Community Contributor)</span>
+        </div>
+
+        <!-- Pinned Note 4: Polaroid style -->
+        <div class="pinned-polaroid polaroid-rotate">
+          <div class="brass-pushpin"></div>
+          <div class="polaroid-photo">
+            <img src="assets/cozy_corner.png" alt="Library meeting">
+          </div>
+          <span class="polaroid-caption">Saturday Reading Circle, Oct 1999</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       THE WALL OF READERS — LUMINARIES OF THE ARCHIVE
+       ========================================== -->
+  <section class="wall-of-fame" id="wall-of-fame">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-subtitle">THE READER REGISTRY</span>
+        <h2 class="section-title">Wall of Readers</h2>
+        <p class="section-desc">Honoring the passionate community who shaped the bookstore over decades. Here are their
+          recommended volumes and streaks.</p>
+      </div>
+
+      <div class="wall-grid">
+        <!-- Luminary 1 -->
+        <div class="luminary-card card-rotate-left" id="luminary-1">
+          <div class="card-paperclip"></div>
+          <div class="luminary-header">
+            <div class="luminary-avatar avatar-sepia-1">AC</div>
+            <div class="luminary-identity">
+              <h4 class="luminary-name">Aravind Chatterjee</h4>
+              <span class="luminary-role">Reader Since 1980s — Kolkata</span>
+            </div>
+          </div>
+          <blockquote class="luminary-quote">
+            "To read is to travel through time, breathing the same air as the writers who carved these phrases centuries
+            ago."
+          </blockquote>
+          <div class="luminary-recommendation">
+            <span class="rec-label">RECOMMENDED VOLUME</span>
+            <span class="rec-value">Gitanjali</span>
+          </div>
+          <div class="luminary-stamp stamp-gold">VAULT I</div>
+        </div>
+
+        <!-- Luminary 2 -->
+        <div class="luminary-card card-rotate-right" id="luminary-2">
+          <div class="card-paperclip"></div>
+          <div class="luminary-header">
+            <div class="luminary-avatar avatar-sepia-2">PN</div>
+            <div class="luminary-identity">
+              <h4 class="luminary-name">Priya Nair</h4>
+              <span class="luminary-role">Most Recommended Books — Bombay</span>
+            </div>
+          </div>
+          <blockquote class="luminary-quote">
+            "There is an unspoken covenant between the reader, the ink, and the linen page. The digital world can mimic,
+            but it can never emulate this texture."
+          </blockquote>
+          <div class="luminary-recommendation">
+            <span class="rec-label">RECOMMENDED VOLUME</span>
+            <span class="rec-value">The God of Small Things</span>
+          </div>
+          <div class="luminary-stamp stamp-burgundy">CHARTER</div>
+        </div>
+
+        <!-- Luminary 3 -->
+        <div class="luminary-card card-rotate-left-slight" id="luminary-3">
+          <div class="card-paperclip"></div>
+          <div class="luminary-header">
+            <div class="luminary-avatar avatar-sepia-3">KM</div>
+            <div class="luminary-identity">
+              <h4 class="luminary-name">Kabir Mehta</h4>
+              <span class="luminary-role">Community Contributor — Delhi</span>
+            </div>
+          </div>
+          <blockquote class="luminary-quote">
+            "A library is a forest of ideas. You do not just read here; you wander, lose your path, and find yourself in
+            another mind's dream."
+          </blockquote>
+          <div class="luminary-recommendation">
+            <span class="rec-label">RECOMMENDED VOLUME</span>
+            <span class="rec-value">Midnight's Children</span>
+          </div>
+          <div class="luminary-stamp stamp-forest">LEVEL III</div>
+        </div>
+
+        <!-- Luminary 4 -->
+        <div class="luminary-card card-rotate-right-slight" id="luminary-4">
+          <div class="card-paperclip"></div>
+          <div class="luminary-header">
+            <div class="luminary-avatar avatar-sepia-4">SI</div>
+            <div class="luminary-identity">
+              <h4 class="luminary-name">Dr. Shreya Iyer</h4>
+              <span class="luminary-role">Reading Streak Champion — Madras</span>
+            </div>
+          </div>
+          <blockquote class="luminary-quote">
+            "A single verse, when stamped into heavy paper, has the power to anchor a drifting soul. Choose your volumes
+            with quiet deliberation."
+          </blockquote>
+          <div class="luminary-recommendation">
+            <span class="rec-label">RECOMMENDED VOLUME</span>
+            <span class="rec-value">The Golden Threshold</span>
+          </div>
+          <div class="luminary-stamp stamp-charcoal">ARCHIVE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       THE COVENANT MEMBERSHIP
+       ========================================== -->
+  <section class="membership-section" id="membership">
+    <div class="container">
+      <div class="membership-container">
+        <div class="membership-text-content">
+          <span class="section-subtitle">THE COVENANT</span>
+          <h2 class="section-title">You Don't Subscribe.<br>You Belong.</h2>
+          <p class="section-desc">
+            This isn't a loyalty card. It's a stake in a place that cannot exist without the people who choose it.
+          </p>
+          <div class="membership-cta-wrapper">
+            <button class="btn-primary" onclick="document.getElementById('social').scrollIntoView({behavior: 'smooth'})">Join The Archives</button>
+          </div>
+        </div>
+        <div class="membership-image-content">
+          <img src="assets/membership.jpg" alt="The Last Book Store Membership Cards" class="membership-card-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       THE LITERARY LEDGER — SOCIAL PRESENCE
+       ========================================== -->
+  <section class="ledger-social" id="social">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-subtitle">THE LEDGER FEED</span>
+        <h2 class="section-title">Stories from the Shop</h2>
+        <p class="section-desc">Our social feed is styled like a printed literary journal column. A peek inside reader
+          spotlights, shelf discoveries, and cozy moments between the shelves.</p>
+      </div>
+
+      <div class="ledger-feed-grid">
+        <!-- Feed Card 1 -->
+        <div class="ledger-card">
+          <span class="ledger-date">SPOTLIGHT / ISSUE 14</span>
+          <div class="ledger-body">
+            <h4 class="ledger-title">"Books are the quietest and most constant of friends."</h4>
+            <p class="ledger-text">A snippet of conversation from our corner table, as two generation of readers discuss
+              local translations of Gitanjali over warm tea cups.</p>
+          </div>
+          <div class="ledger-footer">❧ Reading Moments</div>
+        </div>
+
+        <!-- Feed Card 2 -->
+        <div class="ledger-card">
+          <span class="ledger-date">DISCOVERY / VOL. II</span>
+          <div class="ledger-body">
+            <h4 class="ledger-title">Finding Arundhati Roy's Spines</h4>
+            <p class="ledger-text">Today we cataloged a rare 1997 hardback copy of "The God of Small Things" printed on
+              heavy textured cardstock. A tactile treasure.</p>
+          </div>
+          <div class="ledger-footer">❧ Curated Shelf Discovery</div>
+        </div>
+
+        <!-- Feed Card 3 -->
+        <div class="ledger-card">
+          <span class="ledger-date">STAFF NOTES / VOL. IX</span>
+          <div class="ledger-body">
+            <h4 class="ledger-title">A Sanctuary Screen-Free</h4>
+            <p class="ledger-text">"The reading chair under the brass lamp has been occupied for four hours. No screens,
+              just ink and tea." — Notes from the Archivist.</p>
+          </div>
+          <div class="ledger-footer">❧ Cozy Sanctuary Nook</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       VINTAGE BORROWING SLIP FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-minimal" style="text-align: center; padding: 2rem 0; font-family: var(--font-mono); font-size: 0.75rem; color: rgba(28, 27, 24, 0.6); border-top: 1px solid rgba(28, 27, 24, 0.08);">
+        &copy; 1989-2026 The Last Book Store. All Rights Preserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Book open background overlay shadow -->
+  <div class="book-overlay" id="book-overlay"></div>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
